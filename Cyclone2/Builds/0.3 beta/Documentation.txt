@@ -1,0 +1,95 @@
+Cyclone 0.3-beta	[11-july-2020]
+----default function input----
+
+print(<string|var|int|float|double>)
+
+println(<string|var|int|float|double>)
+
+type_of(<string|var|int|float|double>)
+
+set_property(<string|var>,<string|var>)
+
+run_file(<string|var>)
+
+write_to_file(<string|var>,<string|var>)
+
+
+
+----default function params----
+
+print(msg)
+
+println(msg)
+
+type_of(var)[has bugs]
+
+set_property(property,value)
+
+run_file(filePath)
+
+write_to_file(filePath,text)
+
+
+
+----default function desciption----
+
+print(msg):Prints <msg>
+
+println(msg):Prints <msg> along with a \n
+
+type_of(var):Prints the data type of <var>
+
+set_property(property,value): sets property of <property> to <value>
+	Properties	values
+	"show_time"	"true"|"false"
+	"exit_on_exc"	"true"|"false"
+	"enable_debug"	"true"|"false"
+
+run_file(filePath): Bakes funtions of <filePath> and runs function 'start' by default
+
+write_to_file(filePath,text): Writes text <text> to file <filePath>.
+
+
+
+----other functionnatlities----
+
+<varName> = <value|var>
+	Declears or changes <varName> with value <value|var> 
+	use (") to declear a string
+	data type of the variable is auto casted. 
+
+<varName> = <val|var> <+|-|*|/|^|%> <val|var> ....
+	Declears or changes <varName> with value <val|var> <+|-|*|/|^|%> <val|var> .... 
+	[ONLY WORKS WITH NUMBERS][DO NOT USE BRACKETS][BODMAS DOES NOT APLY]
+	[Math is done from left to right]
+
+!!!concating strings is not supported yet!!!
+
+function|func <functionName> { <codes> ... }
+	Makes a new function with name <functionName> with codes <codes>
+
+:<functionName>
+	calls function <functionName>
+
+>end|stop|exit
+	terminates the program
+
+//
+	creates a comment which is ignored by the compiler.
+
+
+
+----string cases----
+	"\n"	:	new line
+	"\r"	:	new line
+	"%/"	:	\
+	"%47"	:	\
+	"%37"	:	%
+	"%t"	:	\t[	]
+	"%40"	:	(
+	"%41"	:	)
+	"%123"	:	{
+	"%125"	:	}
+	"./"	:	CurrentDirectory
+	"%34"	:	"
+	"%39"	:	'
