@@ -1,0 +1,45 @@
+func start {
+print("started the function! \n")
+:string_test 
+:var_test
+:test_function
+}
+
+func string_test {
+print("testing!! \n")
+print("this is next line \n")
+print("this is also next line \r")
+print("this is the currrent directory : ./ \n")
+print("this is tab%t! \n")
+print("%34Double Quotes!%34 \n")
+print("%39Single Quotes!%39 \n")
+print("%40Round Brakets!%41 and %123Curly Brakets!%125 \n")
+print("back slashes : \ , %/ , %37 ! \n")
+print("percent sign %37 ! \n")
+}
+
+func var_test {
+//dont forget to add <space> in between each var and token!
+a = 90
+a = a + 10
+print("the value of a is ")
+print(a)
+print("\n")
+integer = 123
+double = 123.01
+string = "123"
+}
+
+func test_function 
+{
+// any variable decleared in a function is global. private variables will be introduced in Cyclone 0.4 beta or later.
+type_of(integer)
+type_of(double)
+type_of(string)
+set_property("show_time","true")
+print("show_time is now true \n")
+set_property("show_time","false")
+print("show_time is now false \n")
+run_file("C:\Users\ASUS\Desktop\aryan\c#\Cyclone2\Builds\0.3 beta\File Run Demonstraion.txt")
+write_to_file("C:\Users\ASUS\Desktop\aryan\c#\Cyclone2\Builds\0.3 beta\File Demonstration.txt","This text will be writen to C:\Users\ASUS\Desktop\aryan\c#\Cyclone2\Builds\0.3 beta\File Demonstration.txt")
+}
